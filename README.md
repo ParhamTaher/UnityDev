@@ -1,1 +1,2 @@
 # UnityDev
+Making the fundamental components of a RPG game (inventory, items, enemy AI, etc), following tutorials from: https://www.youtube.com/playlist?list=PLPV2KyIb3jR4KLGCCAciWQ5qHudKtYeP7&disable_polymer=true
