@@ -285,6 +285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 185894505}
   - component: {fileID: 185894504}
+  - component: {fileID: 185894506}
   m_Layer: 5
   m_Name: GameController
   m_TagString: Untagged
@@ -304,6 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 56932716}
+  scoreText: {fileID: 295178938}
   gameOver: 0
   scrollSpeed: -1.5
 --- !u!224 &185894505
@@ -324,6 +326,23 @@ RectTransform:
   m_AnchoredPosition: {x: 199, y: 496}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &185894506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 185894503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0681ae359516143a4aae44885d436b90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columnPoolSize: 5
+  columnPrefab: {fileID: 1446883776735660, guid: 2899a832dee694af4a428f02d4befb05,
+    type: 2}
+  spawnRate: 4
+  columnMin: -2
+  columnMax: 2
 --- !u!1 &295178935
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,6 +809,7 @@ GameObject:
   - component: {fileID: 1076769963}
   - component: {fileID: 1076769962}
   - component: {fileID: 1076769961}
+  - component: {fileID: 1076769965}
   m_Layer: 0
   m_Name: Ground 2
   m_TagString: Untagged
@@ -804,7 +824,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1076769959}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.52, z: 0}
+  m_LocalPosition: {x: 20.48, y: -2.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 115061790}
@@ -911,6 +931,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1076769965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1076769959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0524fadf309e4af7846ace4608b1647, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1350242822
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,6 +1027,7 @@ GameObject:
   - component: {fileID: 1984159186}
   - component: {fileID: 1984159188}
   - component: {fileID: 1984159187}
+  - component: {fileID: 1984159189}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -1115,6 +1147,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03b185dabcee34319b59de5ba716b5f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1984159189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1984159183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0524fadf309e4af7846ace4608b1647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2079705915
