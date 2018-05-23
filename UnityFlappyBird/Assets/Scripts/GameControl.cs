@@ -10,11 +10,16 @@ public class GameControl : MonoBehaviour {
     public GameObject gameOverText;
     public Text scoreText;
     public bool gameOver = false;
-    public float scrollSpeed = -1.5f;
+    public float scrollSpeed = -3f;
+    public float obstacleSpawnX = 8f;
+    public float obstacleSpawnRate = 3f;
+    public float obstacleMinY = -3.5f;
+    public float obstacleMaxY = 1.0f;
+    public float ringOffsetX = 2f;
 
     private int score = 0;
 
-	// Use this for initialization
+	// Use this for initialization (Singleton pattern)
 	void Awake () {
 
         if (instance == null) {
@@ -28,13 +33,17 @@ public class GameControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (gameOver && Input.GetMouseButton(0)) {
+        if (gameOver && Input.GetMouseButtonDown(0)) {
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
         }
 		
 	}
+
+    public float getSpawnYPosition() {
+        return Random.Range(GameControl.instance.obstacleMinY, GameControl.instance.obstacleMaxY);
+    }
 
     public void BirdScored() {
 
@@ -57,4 +66,24 @@ public class GameControl : MonoBehaviour {
         gameOver = true;
         
     }
+
+    public void SetScrollSpeed(float speed) {
+        scrollSpeed = speed;
+    }
+
+    public void SetColSpawnXPosition(float pos)
+    {
+        obstacleSpawnX = pos;
+    }
+
+    public void SetColSpawnRate(float rate)
+    {
+        obstacleSpawnRate = rate;
+    }
+
+    public void setRingOffsetX(float offset)
+    {
+        ringOffsetX = offset;
+    }
+
 }

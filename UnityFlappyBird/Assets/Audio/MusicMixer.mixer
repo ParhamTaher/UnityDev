@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: MusicMixer
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  - {fileID: 245361239682207544}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - 3615ca13460cecc4393fa195144e9697
+    - c1505bd9c0a84b541b4a91e55b97972c
+    - 4c1be4138e227ce48abf60660cfe8382
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 3615ca13460cecc4393fa195144e9697
+  m_Children:
+  - {fileID: 243236515368133140}
+  - {fileID: 243310540631401450}
+  m_Volume: 39e5665e36384004ba733c717f26975a
+  m_Pitch: aee07b602ba7fd3478edd44a84ec9052
+  m_Effects:
+  - {fileID: 24400004}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: a2c6adeda104e3445a142267a4eeb78c
+  m_EffectName: Attenuation
+  m_MixLevel: 63c98254ad840244d9dcc6a276ba94eb
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Background
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: f8870d360fb5369489a47c5d9a08634b
+  m_FloatValues:
+    f3330153ca13acd4082faf175101d122: -0.16685188
+    9bb066d70ab54ef4e936634b8c0f21bb: -80
+    39e5665e36384004ba733c717f26975a: -0.16685188
+  m_TransitionOverrides: {}
+--- !u!243 &243236515368133140
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Background
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 4c1be4138e227ce48abf60660cfe8382
+  m_Children: []
+  m_Volume: f3330153ca13acd4082faf175101d122
+  m_Pitch: 17952e6fd4780e2468e7ff39a7142512
+  m_Effects:
+  - {fileID: 244580926743865408}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243310540631401450
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Coin
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: c1505bd9c0a84b541b4a91e55b97972c
+  m_Children: []
+  m_Volume: 9bb066d70ab54ef4e936634b8c0f21bb
+  m_Pitch: 58a9eea1e5f277d46bf2528d32277692
+  m_Effects:
+  - {fileID: 244365071208854944}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &244365071208854944
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 914f3853c97d6f94b883ed4bac215eb8
+  m_EffectName: Attenuation
+  m_MixLevel: 0d3d305dac57134498054f1eb0532195
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244580926743865408
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 52385dddcd1d77041b5b49db3ee7c26a
+  m_EffectName: Attenuation
+  m_MixLevel: d0e19495aa68e80468e02db1d5889b5b
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &245361239682207544
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Coin
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 4cf67fc7c83163c4386b07052a18bd7c
+  m_FloatValues:
+    f3330153ca13acd4082faf175101d122: -19.928473
+    9bb066d70ab54ef4e936634b8c0f21bb: 0.23288241
+    39e5665e36384004ba733c717f26975a: -0.16685188
+  m_TransitionOverrides: {}
